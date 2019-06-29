@@ -1,0 +1,12 @@
+Conditions For Sampling The Camera Module
+
+1. Sampling should start at the rising edge of the PCLK.
+2. Sampling should occur only when HREF is HIGH.
+3. Rising edge of the HREF signals the start of the line.
+4. Falling edge of the HREF signals the end of the line.
+5. Falling edge of the VSYNC signsals the start of the frame and Rising edge
+   the end of the frame.
+6. After the clock signal is applied on the XCLK pin the HREF,VSYNC and D0-D7 
+   pins start driving.
+
+register value of  EICRA = 
